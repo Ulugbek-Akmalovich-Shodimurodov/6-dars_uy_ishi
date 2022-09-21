@@ -1,17 +1,24 @@
 /* header */
 
 .site-header{
-    width: 100%;
+    position: absolute;
+    // width: 100%;
     // height: 100vh;
-    // padding: 30px 0;
-
+    // background: #000;
     
     
-    position: fixed;
+    
+    // position: fixed;
     top: 0;
 }
 .site__navbar{
+    position: fixed;
+
+    z-index: 1100;
+
     width: 300px;
+    padding: 0px ;
+    padding-left: 30px;
     
     display: flex;
     flex-direction: column;
@@ -19,6 +26,7 @@
     background: #fff;
 }
 .site-logo__link{
+    display: block;
     padding: 20px 0;
 
     text-decoration: none;
@@ -37,9 +45,7 @@ li{
     margin: 0;
     padding: 0;
 }
-.navbar-list:hover{
 
-}
 .navbar-list__item{
     position: relative;
 
@@ -51,7 +57,8 @@ li{
     top: 0;
     left: -20px;
     content: url(../../img/pitechka.png);
-
+    
+    color: #E31E24;
 }
 .navbar-list__link{
     text-decoration: none;
@@ -62,14 +69,15 @@ li{
     
     color: #000000;
 }
-.navbar-list__link:hover{
+.navbar-list__item:hover  .navbar-list__link{
     color: #E31E24;
+
+
 }
 .site-location__adress{
     width: 78%;
 
     margin-top: 25px;
-    // margin-bottom: 20px;
 
     display: flex;
     flex-direction: column;
@@ -141,7 +149,6 @@ li{
     zoom: 1.3;
 }
 
-
 //  main
 
 .site-location__card{
@@ -151,7 +158,21 @@ li{
 @media screen and(max-width:1000px){
     .site__navbar{
         width: 300px;
-        margin-left: -100%;
+        opacity: 0;
     }
     
 }
+
+#menu-bars:checked ~ .site__navbar{
+    opacity: 1;
+    z-index: 1000;
+    width: 300px;
+    // margin-left:  0;
+
+    background: #000;
+}
+// #menu-bars:checked ~ .site-header{
+//     margin-left: -100%;
+
+//     background: #000;
+// }

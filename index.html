@@ -5,6 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400&family=Bebas+Neue&family=Cormorant:ital,wght@0,600;0,700;1,400&family=Fraunces:opsz,wght@9..144,200;9..144,300;9..144,400;9..144,600&family=Inter&family=Poppins&family=Roboto:wght@300;400;500;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="./css/all.min.css">
   <link rel="stylesheet" href="./css/fontawesome.min.css">
@@ -12,22 +15,27 @@
 <body>
   <header class="site-header">
     <nav class="site__navbar">
-      <a   href="./index.html" class="site-logo__link"><img class="site-logo__img" src="./img/grand-victoriya_logo.png" alt=""></a>
+      <input type="checkbox" id="menu-bars">
+
+      
       <ul class="navbar-list">
+        <li class="navbar-list__item">
+          <a   href="./index.html" class="site-logo__link"><img class="site-logo__img" src="./img/grand-victoriya_logo.png" alt=""></a>
+        </li>
         <li class="navbar-list__item">
           <a href="#" class="navbar-list__link">Главная</a>
         </li>
         <li class="navbar-list__item">
-          <a href="#" class="navbar-list__link">О комлексе</a>
+          <a href="#kompleks" class="navbar-list__link">О комлексе</a>
         </li>
         <li class="navbar-list__item">
-          <a href="#" class="navbar-list__link">Преимущества</a>
+          <a href="#pri" class="navbar-list__link">Преимущества</a>
         </li>
         <li class="navbar-list__item">
-          <a href="#" class="navbar-list__link">Инфраструктура</a>
+          <a href="#infra" class="navbar-list__link">Инфраструктура</a>
         </li>
         <li class="navbar-list__item">
-          <a href="#" class="navbar-list__link">Условия приобретения</a>
+          <a href="#usloviya" class="navbar-list__link">Условия приобретения</a>
         </li>
         <li class="navbar-list__item">
           <a href="#" class="navbar-list__link">Типовые планировки</a>
@@ -85,21 +93,22 @@
                 <li class="footer-contact__list-item">
                   <a class="brend-icon" href="https://www.instagram.com" target="_blank"><i class="brend-icon__item fa-brands fa-instagram"></i></a>
                 </li>
-                <li class="footer-contact__list-item">
-                  <a class="brend-icon" href="https://ru.linkedin.com" target="_blank"><i class="brend-icon__item fa-brands fa-linkedin-in"></i></a>
-                </li>
               </ul>
             </li>
           </ul>
         </li>
       </ul>
 
+      
     </nav>
   </header>
   <main class="site__main">
     <section>
       <div class="container">
         <div class="main-head">
+          <label class="menu-bars" for="menu-bars"> 
+            <img class="navbar-button__img" src="./img/bars.png" alt="bars" >
+          </label>
           <ul class="main-nav">
             <li class="main-nav__item">
               <a href="#" class="main-nav__link">Офисы</a>
@@ -111,16 +120,517 @@
               <a href="#" class="main-nav__link">Келлеры</a>
             </li>
           </ul>
-          <a href="#">Скачать презентацию</a>
+          <a class="main-nav__link link-down" href="#">Скачать презентацию</a>
+        </div>
+        <img class="main__img" src="./img/main__img.png" alt="">
+      </div>
+    </section>
+    <section id="kompleks">
+      <div class="container">
+        <div class="section__box">
+          <div class="kopmleks-section__box">
+            <span class="kopmleks-section__box-rectangle"></span>
+            <h3 class="section-title">
+              О комплексе
+            </h3>
+            <p class="section-text">
+              «Grand Victoria» — это современный, стильный и  яркий  жилой  комплекс,  сочетающий  в  себе  комфорт, функциональность  и  красоту.  Высокий уровень жизни в ЖК «Grand Victoria» обеспечивается за счёт качества строительства,  продуманных  архитектурных  решений,  транспортной  доступности  и  развитой  инфраструктуры. Объект возводится  в  престижном  и  уютном  микрорайоне  столицы,  на  пересечении  улиц  С. Нурмагамбетова  и 
+  Ж. Нажимеденова,  в  непосредственной  близости  к  значимым  культурным  объектам  Нур-Султана.  Рядом  находятся мечеть  «Хазрет  Султан»,  Национальный  музей  Республики Казахстан,  Дворец творчества «Шабыт»,  Казахский Государственный академический музыкально-драматический театр им. К. Куанышбаева, монумент «Қазақ Елі». В шаговой доступности несколько государственных и частных школ и детских садов
+            </p>
+            <ul class="kopmleks-section__list">
+              <li class="kompleks-section__item">
+                <span class="item__number">
+                  4
+                </span>
+                <span class="item__text">
+                  дома
+                </span>
+              </li>
+              <li class="kompleks-section__item">
+                <span class="item__number">
+                  9
+                </span>
+                <span class="item__text">
+                  этажей
+                </span>
+              </li>
+              <li class="kompleks-section__item">
+                <span class="item__number">
+                  1040
+                </span>
+                <span class="item__text">
+                  квартир
+                </span>
+              </li>
+              <li class="kompleks-section__item">
+                <span class="item__number">
+                  2022 г.
+                </span>
+                <span class="item__text">
+                  cдача в эксплуатацию
+                </span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
+    <section id="pri">
+      <div class="container">
+        <div class="section__box">
+          <div class="kopmleks-section__box">
+            <span class="kopmleks-section__box-rectangle"></span>
+            <h3 class="section-title">
+              Преимущества
+            </h3>
+            <img src="./img/Вписание.png" alt="">
+            <h4 class="text-title">
+              Локация
+            </h4>
+            <p class="section-text">
+              Жилой комплекс «Grand Victoria» расположен в самом сердце культурной жизни столицы. Не нужно далеко ехать, чтобы посетить мечеть, театр, музей или концертный зал – всё это в шаговой доступности. 
+            </p>
+            <div class="card-list">
+
+              
+              <ul class="premushectva-list__left">
+                <li class="premushectva-list__left-item">
+                  <img class="card__img" src="./img/card1.png" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Разумные метры 
+                    </h5>
+                    <p class="card-text">
+                      При проектировании квартир ЖК «Grand Victoria» использовался принцип «Разумные метры», который позволил эффективно использовать каждый квадратный метр площади. Все планировки функциональны - нет слишком длинных коридоров, тупиков и тёмных углов. Рациональные, эргономичные и продуманные планировки позволят функционально разместить мебель и сделать пространство комфортным
+                    </p>
+                  </div>
+                </li>
+                <li class="premushectva-list__left-item">
+                  <img class="card__img" src="./img/card2.png" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Технология строительства
+                    </h5>
+                    <p class="card-text">
+                      Проект возводится по уникальному методу индустриального строительства. Все изделия выпускаются в заводских условиях - ровные стены, готовые под оклейку обоями или покраску с проведеннымии каналами для электропроводки, трехслойные наружные фасады, отвечающие всем стандартам качества, безопасности и архитектурной эстетики.
+Учитывая климатические условия столицы от -40 до +40 ⁰С, изделия обладают повышенной энергоэффективностью и влагонепроницаемостью.
+                    </p>
+                  </div>
+                </li>
+                <li class="premushectva-list__left-item">
+                  <img class="card__img" src="./img/card3.png" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Паркинг 
+                    </h5>
+                    <p class="card-text">
+                      Подземный паркинг с автоматизированным контролем доступа. Он оборудован системами видеонаблюдения, вентиляции и дымоудаления. Подземный паркинг рассчитан на 358 машиномест. Также имеются специальные парковочные места для водителей с ограниченными возможностями. Предусмотрено также 16 мотомест. Есть отдельная парковка для гостевых автомобилей.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+
+              <ul class="premushectva-list__right">
+                <li class="premushectva-list__right-item">
+                  <img class="card__img" src="./img/card4.png" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Идеальные планировки
+                    </h5>
+                    <p class="card-text">
+                      В проекте предусмотрены квартиры различной комнатности от 44 до 117 квадратных метров. Компактные однушки станут отличным вариантом для тех, кто ещё не обзавёлся семьёй. Функциональные двухкомнатные квартиры подойдут молодым парам, а для семей с детьми запроектированы просторные трёхкомнатные и четырёхкомнатные квартиры с большими площадями
+                    </p>
+                  </div>
+                </li>
+                <li class="premushectva-list__right-item">
+                  <img class="card__img" src="./img/card5.png" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Стильные решения 
+
+                    </h5>
+                    <p class="card-text">
+                      Входные группы, лифтовые зоны, колясочные и другие общественные пространства комплекса не только функциональны, но и выполнены в современном стиле.  Перед лифтами предусмотрены указатели этажей, а также информационные стенды, для того, что бы быть в курсе жизни комплекса. 
+                    </p>
+                  </div>
+                </li>
+                <li class="premushectva-list__right-item">
+                  <img class="card__img" src="./img/card6.png" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Келлеры 
+                    </h5>
+                    <p class="card-text">
+                      Для оптимизации пространства квартир в паркинге  предусмотрены помещения для хранения - келлеры.
+Келлерная система хранения популярна в Европе. Не нужно хранить межсезонные вещи, спортинвентарь, инструменты, туристические принадлежности на балконе или в доме.
+В келлерах можно организовать постоянное или временное хранение вещей.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="infra">
+      <div class="container">
+        <div class="section__box">
+          <div class="kopmleks-section__box">
+            <span class="kopmleks-section__box-rectangle"></span>
+            <h3 class="section-title">
+              Инфраструктура
+            </h3>
+            <ul class="infra-list">
+              <li class="infra-list__item">
+                <a href="#" class="infra-list__link">Расположение</a>
+              </li>
+              <li class="infra-list__item">
+                <a href="#" class="infra-list__link">Все продумано</a>
+              </li>
+              <li class="infra-list__item">
+                <a href="#" class="infra-list__link">Безопасный двор</a>
+              </li>
+            </ul>
+            <p class="section-text">
+              Жилой комплекс «Grand Victoria» расположен в самом сердце культурной жизни столицы. Не нужно далеко ехать, чтобы посетить мечеть, театр, музей, концертный зал или знаковый городской монумент – всё это в шаговой доступности. Лучшие достопримечательности Нур-Султана можно видеть каждый день, устраивая неспешные прогулки.  
+            </p>
+            <ul class="infra-card__list">
+              <li class="infra-card__item">
+                <img src="./img/card7.png" alt="">
+                <div class="infra-card__body">
+                  <span class="card__vertical-line"></span>
+                <p class="infra-card__text">
+                  220 м. до Казахского <br> драматического театра
+
+                </p>
+                </div>
+              </li>
+              <li class="infra-card__item">
+                <div class="infra-card__body">
+                  <span class="card__vertical-line"></span>
+                <p class="infra-card__text">
+                  220 м. до Казахского <br> драматического театра
+
+                </p>
+                </div>
+              </li>
+              <li class="infra-card__item">
+                <div class="infra-card__body">
+                  <span class="card__vertical-line"></span>
+                <p class="infra-card__text">
+                  220 м. до Казахского <br> драматического театра
+
+                </p>
+                </div>
+              </li>
+              <li class="infra-card__item">
+                <div class="infra-card__body">
+                  <span class="card__vertical-line"></span>
+                <p class="infra-card__text">
+                  220 м. до Казахского <br> драматического театра
+
+                </p>
+                </div>
+              </li>
+              <li class="infra-card__item">
+                <div class="infra-card__body">
+                  <span class="card__vertical-line"></span>
+                <p class="infra-card__text">
+                  220 м. до Казахского <br> драматического театра
+
+                </p>
+                </div>
+              </li>
+              <li class="infra-card__item">
+                <div class="infra-card__body">
+                  <span class="card__vertical-line"></span>
+                <p class="infra-card__text">
+                  220 м. до Казахского <br> драматического театра
+
+                </p>
+                </div>
+              </li>
+            </ul>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="usloviya">
+      <div class="container">
+        <div class="section__box">
+          <div class="kopmleks-section__box">
+            <span class="kopmleks-section__box-rectangle"></span>
+            <h3 class="section-title">
+              Условия приобретения
+            </h3>
+            <ul class="usloviya-section__card-list">
+              <li class="usloviya-section__card-item">
+                <i class="usloviya-card__icon fa-solid fa-money-bill-1 fa-3x"></i>
+                <p class="usloviya-card__price">340 000 тг <br><span class="usloviya-card__text">При 100% оплате</span></p>
+              </li>
+              <li class="usloviya-section__card-item">
+                <i class="usloviya-card__icon fa-regular fa-clock fa-3x"></i>
+                <p class="usloviya-card__price">360 000 тг <br><span class="usloviya-card__text">В рассрочку</span></p>
+              </li>
+              <li class="usloviya-section__card-item">
+                <i class="usloviya-card__icon fa-solid fa-percent fa-3x"></i>
+                <p class="usloviya-card__price">380 000 тг <br><span class="usloviya-card__text">В ипотеку</span></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="site-video">
+      <div class="container">
+        <div class="section__box">
+          <div class="kopmleks-section__box">
+            <span class="kopmleks-section__box-rectangle"></span>
+            <h3 class="section-title">
+              Видеопрезентация
+            </h3>
+            <video controls width="100%">
+              <source src="./video/video.mp4">
+            </video>
+            <div class="btn-box">
+              <button class="video-btn">Во дворе</button>
+              <button class="video-btn">На улице</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="type-section">
+      <div class="container">
+        <div class="section__box">
+          <div class="kopmleks-section__box">
+            <span class="kopmleks-section__box-rectangle"></span>
+            <h3 class="section-title">
+              Инфраструктура
+            </h3>
+            <ul class="infra-list">
+              <li class="infra-list__item">
+                <a href="#" class="infra-list__link">1-комнатные</a>
+              </li>
+              <li class="infra-list__item">
+                <a href="#" class="infra-list__link">2-х комнатные</a>
+              </li>
+              <li class="infra-list__item">
+                <a href="#" class="infra-list__link">3-х комнатные</a>
+              </li>
+              <li class="infra-list__item">
+                <a href="#" class="infra-list__link">4-х комнатные</a>
+              </li>
+            </ul>
+            <div class="chertiyashka-box">
+              <ul class="drawing-list">
+                <li class="drawing-title">
+                  <h5>ВАРИАНТ 1</h5>
+                </li>
+                <li class="drawing__item">
+                  <span class="drawing-list__item-name">
+                    Пятно
+                  </span>
+                  <span class="drawing-list__item-date">
+                    1,2,3,4
+                  </span>
+                </li>
+                <li ><hr class="drawing-line"></li>
+                <li class="drawing__item">
+                  <span class="drawing-list__item-name">
+                    Этажи
+                  </span>
+                  <span class="drawing-list__item-date">
+                    2-9
+                  </span>
+                </li>
+                <li ><hr class="drawing-line"></li>
+                <li class="drawing__item">
+                  <span class="drawing-list__item-name">
+                    Комнат
+                  </span>
+                  <span class="drawing-list__item-date">
+                    1
+                  </span>
+                </li>
+                <li ><hr class="drawing-line"></li>
+                <li class="drawing__item">
+                  <span class="drawing-list__item-name">
+                    Площадь
+                  </span>
+                  <span class="drawing-list__item-date">
+                    44.10
+                  </span>
+                </li>
+                <li ><hr class="drawing-line"></li>
+                <li class="drawing__item">
+                  <span class="drawing-list__item-name">
+                    Кухня
+                  </span>
+                  <span class="drawing-list__item-date">
+                    12.60
+                  </span>
+                </li>
+              </ul>
+              <img class="drawing__img" src="./img/chertiyashka.png" alt="">
+            </div>
+            <div class="section-controll__box">
+              <i class="section-control__item fa-solid fa-arrow-left"></i>
+              <i class="section-control__item fa-solid fa-arrow-right"></i>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="stroitilistva">
+      <div class="container">
+        <div class="section__box">
+          <div class="kopmleks-section__box">
+            <span class="kopmleks-section__box-rectangle"></span>
+            <h3 class="section-title">
+              Ход строительства
+            </h3>
+            <ul class="infra-list">
+              <li class="infra-list__item">
+                <a href="#" class="infra-list__link">Декабрь 2021</a>
+              </li>
+              <li class="infra-list__item">
+                <a href="#" class="infra-list__link">Январь 2022</a>
+              </li>
+              <li class="infra-list__item">
+                <a href="#" class="infra-list__link">Март 2022</a>
+              </li>
+              <li class="infra-list__item">
+                <a href="#" class="infra-list__link">Апрель 2022</a>
+              </li>
+              <li class="infra-list__item">
+                <a href="#" class="infra-list__link">Апрель 2022</a>
+              </li>
+              <li class="infra-list__item">
+                <a href="#" class="infra-list__link">Апрель 2022</a>
+              </li>
+              <li class="infra-list__item">
+                <a href="#" class="infra-list__link">Апрель 2022</a>
+              </li>
+              <li class="infra-list__item">
+                <a href="#" class="infra-list__link">Апрель 2022</a>
+              </li>
+              <li class="infra-list__item">
+                <a href="#" class="infra-list__link">Апрель 2022</a>
+              </li>
+              <li class="infra-list__item">
+                <a href="#" class="infra-list__link">Апрель 2022</a>
+              </li>
+            </ul>
+            <ul class="stroitilistva-card__list">
+              <li class="stroitilistva-card__item">
+                <img src="./img/stroitilistva.png" alt="">
+              </li>
+              <li class="stroitilistva-card__item">
+                <img src="./img/stroitilistva.png" alt="">
+              </li>
+              <li class="stroitilistva-card__item">
+                <img src="./img/stroitilistva.png" alt="">
+              </li>
+            </ul>
+            <div class="section-controll__box">
+              <i class="section-control__item fa-solid fa-arrow-left"></i>
+              <i class="section-control__item fa-solid fa-arrow-right"></i>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news-section">
+      <div class="container">
+        <div class="section__box">
+          <div class="kopmleks-section__box">
+            <span class="kopmleks-section__box-rectangle"></span>
+            <h3 class="section-title">
+              Новости
+            </h3>
+            <ul class="news-card__list">
+              <li class="news-list__item">
+                <img class="news-list__item-img" src="./img/news-img.png" alt="">
+                <p class="news-card__text">
+                  Строительство ЖК «Grand Victoria» выходит на финишную прямую
+                </p>
+              </li>
+              <li class="news-list__item">
+                <img class="news-list__item-img" src="./img/news-img.png" alt="">
+                <p class="news-card__text">
+                  Строительство ЖК «Grand Victoria» выходит на финишную прямую
+                </p>
+              </li>
+              <li class="news-list__item">
+                <img class="news-list__item-img" src="./img/news-img.png" alt="">
+                <p class="news-card__text">
+                  Строительство ЖК «Grand Victoria» выходит на финишную прямую
+                </p>
+              </li>
+              <li class="news-list__item">
+                <img class="news-list__item-img" src="./img/news-img.png" alt="">
+                <p class="news-card__text">
+                  Строительство ЖК «Grand Victoria» выходит на финишную прямую
+                </p>
+              </li>
+            </ul>
+            <hr class="section-line">
+            <a class="news-section__link" href="#">Все новости</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="form-section">
+      <div class="container">
+        <div class="section__box">
+          <form  class="form-box">
+            <h4 class="form-title">
+              Получите консультацию
+            </h4>
+            <div class="form-box__list">
+              <div class="form-box__item">
+                <label class="form-label" for="name">Имя</label>
+                <input class="form-inp" type="text" id="name" placeholder="Введите имя">
+              </div>
+              <div class="form-box__item">
+                <label class="form-label" for="name">Телефон</label>
+                <input class="form-inp" type="text" id="name" placeholder="" value="+7">
+              </div>
+              <button class="form-btn" type="submit">Получить консультацию</button>
+            </div>
+            <p class="form-text">Нажимая кнопку “Получить консультацию” вы соглашаетесь с условиями обработки личных данных</p>
+          </form>
+          
+        </div>
+      </div>
+
+    </section>
+
+
+
     <div class="container">
       <iframe class="site-location__card" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20037.055748627135!2d71.48409605715976!3d51.11525011796295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245832974b62acd%3A0x8ec0d02b14ede209!2z0JbQmiBHcmFuZCBWaWN0b3JpYQ!5e0!3m2!1sru!2s!4v1663700578342!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis culpa voluptas, laudantium aperiam quidem aspernatur ea voluptatum quibusdam numquam nesciunt quaerat atque non assumenda! Ipsam, exercitationem. Quidem quam qui provident at nihil mollitia minima pariatur, eos dignissimos facilis amet, corporis eaque recusandae. Nisi beatae eveniet nam nihil cum, aut error ipsam perspiciatis? In, ipsum assumenda. Non eligendi recusandae suscipit libero reprehenderit eius cum error dignissimos delectus optio asperiores officia rem perspiciatis quis rerum laborum nostrum consequuntur totam minima inventore est, corporis laboriosam. Animi, ipsum placeat quae adipisci perspiciatis ea odit ipsam esse accusantium ab officia et dolorum facilis, deserunt natus exercitationem asperiores hic, at rerum molestias? Suscipit tempora consequuntur illo quam fuga, numquam quaerat adipisci veniam officia aliquid officiis vero sequi totam odit corporis quas ab laboriosam mollitia, excepturi dolorem? Fugiat vitae distinctio dolore quam, earum voluptates sit. Error sit magnam quia harum blanditiis repudiandae, modi repellat quam cumque! Provident exercitationem dolorem illum quod voluptatem eum pariatur alias eos officia esse quas rerum ab vel facere, cumque similique ut! Laboriosam, esse commodi vel ad illo facere illum maiores reprehenderit non aspernatur corporis est ut eos tenetur impedit similique nulla repudiandae cum adipisci soluta ullam deleniti voluptatibus sunt? Dolor illum veritatis error officiis ipsa perferendis debitis assumenda dicta, nam ex! Impedit pariatur assumenda itaque laboriosam accusamus at perspiciatis molestiae dolor neque temporibus odio velit ipsa animi modi quod et maiores nulla delectus obcaecati doloremque, eos natus ut. Quaerat cupiditate dolores sit dignissimos incidunt, nisi explicabo, placeat veniam unde, ut qui voluptate quos neque veritatis harum sunt maiores beatae quo quam eum iste architecto asperiores cum. Error totam sit aliquid officia, quam nesciunt quis, aperiam pariatur laborum libero ipsam nulla enim eius cupiditate nostrum voluptates amet possimus voluptatum a ipsa sapiente repellat sed. Numquam assumenda sit quasi fugiat sunt velit adipisci necessitatibus?
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, ipsa repellendus dignissimos ipsum quasi ratione earum veniam sint doloremque quia temporibus, quae qui id quas eos quidem blanditiis. Quas praesentium facilis modi, aperiam ratione minus quaerat accusantium excepturi velit dolores tenetur consectetur corrupti obcaecati eveniet incidunt exercitationem ad maiores accusamus.
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos tempora ab aliquid omnis similique dicta consequatur tenetur, numquam perspiciatis possimus deleniti, adipisci est ipsa ex soluta beatae. Minima, vero ea odio pariatur sunt deserunt perspiciatis error nostrum nihil similique iure amet atque tenetur placeat hic impedit unde natus consequuntur eligendi modi aliquid numquam ut laudantium! Deleniti alias eaque repellat et assumenda nulla maxime aspernatur, quasi nostrum quia saepe debitis praesentium quibusdam voluptatum ut repudiandae, ullam odio delectus fugit commodi dolorum neque sequi? Et laudantium deleniti voluptatum quam. Non, tenetur reprehenderit iusto tempore fuga eaque magnam eum sint rem voluptatibus labore? Quo, aperiam nesciunt minus laudantium sit officia omnis tenetur. Cum incidunt deserunt deleniti, fugit inventore impedit voluptas animi sunt sint assumenda commodi tempora rerum dolor vitae dolorem itaque excepturi obcaecati ab! Aspernatur quaerat debitis ut assumenda beatae blanditiis. Ullam soluta corporis dolore quidem ducimus optio, sunt aut molestias amet quam, ea temporibus tenetur reprehenderit voluptates veritatis! Fugit perferendis molestias modi et. Optio eum saepe ullam atque! Incidunt doloribus explicabo obcaecati cumque ad velit non nulla aliquid ut illo? Tempora ullam rem laudantium quo quasi praesentium at ipsa corrupti, a, facilis adipisci mollitia quis consectetur amet maiores nihil omnis. Alias tenetur libero dolorem similique eaque nihil dolor ut culpa in doloribus enim natus dolore deserunt, placeat animi maxime omnis nam accusantium voluptas incidunt vel minus modi beatae aut. Laudantium non illo dignissimos nesciunt maiores nemo autem fugit nulla tempora voluptate minima ipsa minus aut ducimus, laboriosam rem, accusamus porro? Beatae, voluptatem consequatur est ipsum eos molestias rem nemo aspernatur laboriosam suscipit sint excepturi delectus, doloremque provident qui libero dicta earum quod corrupti a fugiat cupiditate. Ducimus cum impedit neque tempore consequuntur voluptatum reprehenderit provident dolorem quam, enim quidem eveniet est labore sint exercitationem distinctio, facilis magnam sequi iusto, vero nam asperiores illo accusantium et. Consectetur omnis non nesciunt tempore similique autem nulla laudantium aut enim harum, architecto ducimus perspiciatis vel id iusto? Numquam inventore placeat recusandae at tempora doloremque autem cupiditate fugit, quia quo error ullam, repellat officia quos optio aperiam, culpa est quod delectus fugiat perferendis minima vel. Quasi accusantium facilis qui maiores esse et quibusdam quas soluta nulla, cupiditate voluptatibus nisi sed a harum ab alias blanditiis laudantium animi deserunt doloremque cum eos laboriosam. Iure omnis ea fuga minima iste vitae rerum error pariatur, deleniti, exercitationem id aliquid harum consequatur, voluptate accusamus repellat ab laudantium cupiditate enim. Quo quisquam voluptate asperiores labore debitis ullam, libero, sit molestias fugit aspernatur laborum placeat dolores est harum incidunt a dolorem at. Numquam qui molestiae, ullam architecto eius dolor vitae neque nobis, iure saepe sint, aut officiis asperiores ducimus perspiciatis cum blanditiis mollitia aspernatur. Asperiores architecto animi eius. Quas temporibus recusandae numquam. Asperiores, neque, reiciendis minus, inventore id placeat quod voluptatum obcaecati delectus doloremque beatae facere nobis! Asperiores possimus repudiandae enim saepe officiis, quae, reprehenderit optio vitae numquam aliquam facilis est? Minus amet sint corrupti beatae mollitia cupiditate sunt, at voluptas aliquam animi veritatis nemo nam. Rem harum sunt, exercitationem beatae iste similique!
+      
     </div>
   </main>
+  <footer>
+    <div class="container">
+      <div class="footer-box">
+        <p class="footer-text">
+          © 2021 ЖК «Grand Victoria» <br> <br>
+          <span class="footer_text">
+            Реализация квартир, офисов и парковочных мест производится в соответствии с Законом Республики Казахстан <br>
+от 7 апреля 2016 года № 486-V «О долевом участии в жилищном строительстве».
+          </span>
+        </p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

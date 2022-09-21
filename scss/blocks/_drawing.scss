@@ -1,0 +1,40 @@
+
+
+.chertiyashka-box{
+    width: 100%;
+    padding: 30px 0;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+.drawing-list{
+    width: 40%;
+
+}
+.drawing-title{
+    padding: 30px 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+.drawing__item{
+    padding: 10px 0;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+@media screen and(max-width:750px){
+    .chertiyashka-box{
+        flex-direction: column;
+    }
+    .drawing-list{
+        width: 100%;
+    }
+    
+}

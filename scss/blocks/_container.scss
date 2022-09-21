@@ -1,12 +1,10 @@
 /*CONTAINER*/
 .container {
+  position: relative;
+
   width: 78%;
   max-width: 1280px;
-  // margin: 0 auto;
   margin-left: auto;
-  // padding-left: 20px;
-  // padding-right: 20px;
-  background: red;
 }
 
 @media screen  and(max-width:1350px){
